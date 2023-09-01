@@ -1,5 +1,5 @@
 # Site
-repository: sproogen/resume-theme
+repository: LuisRosado/LuisRosado.github.io
 favicon: images/favicon.ico
 
 # Content configuration version
@@ -33,7 +33,7 @@ linkedin_username: Luis Angel Rosado
 additional_links: Chamba
 - title: 
   icon: fas fa-globe
-  url: https://www.youtube.com/shorts/T3yBBuEbMWQ
+  url: youtube.com/shorts/T3yBBuEbMWQ
 # - title: another link
 #   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
 #   url: Link url (eg. https://google.com)
@@ -56,7 +56,7 @@ content:
     content:
       - layout: top-middle
         title: Pagina web para libreria
-        link: https://github.com/LuisRosado/TiendaDeLibros
+        link: github.com/LuisRosado/TiendaDeLibros
         # link_text: Project Website
         additional_links:
           - title:  sproogen/modern-resume-theme
