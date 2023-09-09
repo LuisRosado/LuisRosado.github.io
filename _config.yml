@@ -98,33 +98,33 @@ content:
         description: | # this will include new lines to allow paragraphs
           As a graduate of the University of Guadalajara (UdG) with a degree in Computer Engineering, I have acquired a wide range of skills that prepare me to excel in the field of computing. Some of my skills include:
 
-          Programming: I have experience in several programming languages, such as Java, Python and C++, which allows me to develop applications and software effectively.
+          -> Programming: I have experience in several programming languages, such as Java, Python and C++, which allows me to develop applications and software effectively.
 
-          Algorithm Design: I can design efficient algorithms to solve computational problems optimally.
+          -> Algorithm Design: I can design efficient algorithms to solve computational problems optimally.
 
-          Software Development: I am trained in the complete software development cycle, from planning and design to implementation and testing.
+          -> Software Development: I am trained in the complete software development cycle, from planning and design to implementation and testing.
 
-          Databases: I have knowledge in database design and data management using database management systems (DBMS).
+          -> Databases: I have knowledge in database design and data management using database management systems (DBMS).
 
-          Networking: I understand the concepts of networks and protocols, as well as being able to configure and maintain networks effectively.
+          -> Networking: I understand the concepts of networks and protocols, as well as being able to configure and maintain networks effectively.
 
-          Computer Security: I am aware of best practices in cybersecurity and can protect systems and data.
+          -> Computer Security: I am aware of best practices in cybersecurity and can protect systems and data.
 
-          Web Development: I have experience developing websites and web applications using technologies such as HTML, CSS and JavaScript.
+          -> Web Development: I have experience developing websites and web applications using technologies such as HTML, CSS and JavaScript.
 
-          Artificial Intelligence and Machine Learning: I am familiar with machine learning techniques and can apply artificial intelligence to solve complex problems.
+          -> Artificial Intelligence and Machine Learning: I am familiar with machine learning techniques and can apply artificial intelligence to solve complex problems.
 
-          Cloud Computing: I have knowledge in the use of cloud services such as AWS, Azure and Google Cloud.
+          -> Cloud Computing: I have knowledge in the use of cloud services such as AWS, Azure and Google Cloud.
 
-          Project Management: I possess project management skills that allow me to carry out software development projects effectively.
+          -> Project Management: I possess project management skills that allow me to carry out software development projects effectively.
 
-          Problem Solving: I approach complex problems analytically and seek creative solutions.
+          -> Problem Solving: I approach complex problems analytically and seek creative solutions.
 
-          Technical Communication: I can communicate effectively, both orally and in writing, especially in project documentation.
+          -> Technical Communication: I can communicate effectively, both orally and in writing, especially in project documentation.
 
-          Teamwork: I collaborate effectively in multidisciplinary teams and contribute constructively to joint projects.
+          -> Teamwork: I collaborate effectively in multidisciplinary teams and contribute constructively to joint projects.
 
-          Continuous Learning: I maintain an attitude of constant learning to stay current in a rapidly evolving field.
+          -> Continuous Learning: I maintain an attitude of constant learning to stay current in a rapidly evolving field.
 
   - title: A Little More About Me
     layout: text
