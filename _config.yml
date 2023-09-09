@@ -48,9 +48,11 @@ additional_links:
 # about_title: About Me
 about_profile_image: images/perfil.jpg
 about_content: | # this will include new lines to allow paragraphs
-  I am a Computer Engineering student about to graduate. Although I have no work experience, I have developed strong technical skills throughout my career. 
-  
-  My passion for technology and continuous learning motivate me to seek opportunities to grow and contribute in the field of computing.
+  I am Luis, a passionate Computer Engineering student about to complete my academic training. During my time at university, I have developed a solid base of knowledge and skills in the world of technology.
+
+  My primary focus has been programming, software development, and computer networking, areas in which I have gained deep understanding and experience. What has fascinated me most about my education is not only the concepts and theories, but the ability to apply this knowledge in real projects. Throughout my academic journey, I have participated in challenging academic and personal projects. These projects have given me the opportunity to design and develop applications, solve complex problems, and experiment with innovative technological solutions.
+
+  I am excited for the opportunities the future has to offer after my graduation. I am always open to new connections and collaborations in the exciting and ever-evolving field of technology. Thank you for taking the time to learn more about me!
 
 content:
   - title: Projects # Title for the section
@@ -136,7 +138,7 @@ content:
       - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
 
       Look at this cool image  
-      ![Trees](/modern-resume-theme/images/landscape-trees.jpg "Trees")
+      ![Trees](images/landscape-trees.jpg "Trees")
 
 # Footer
 footer_show_references: true
