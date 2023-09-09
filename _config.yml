@@ -48,7 +48,9 @@ additional_links:
 # about_title: About Me
 about_profile_image: images/perfil.jpg
 about_content: | # this will include new lines to allow paragraphs
-  I am a Computer Engineering student about to graduate. Although I have no work experience, I have developed strong technical skills throughout my career. My passion for technology and continuous learning motivate me to seek opportunities to grow and contribute in the field of computing.
+  I am a Computer Engineering student about to graduate. Although I have no work experience, I have developed strong technical skills throughout my career. 
+  
+  My passion for technology and continuous learning motivate me to seek opportunities to grow and contribute in the field of computing.
 
 content:
   - title: Projects # Title for the section
@@ -80,23 +82,49 @@ content:
         sub_title: Senior Network System Administrator
         caption: November 2017 - Present
         quote: >
-          Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
+          Programming since 2010
         description: | # this will include new lines to allow paragraphs
-            Every company needs its networks properly administered and The Boring Compay is no exception. Digging holes is hard and I play my part making sure the whole company stays connected. I lead a team of 5 people and enjoy driving the company to try new technologies.
+            Throughout my career in Computer Engineering, I have worked on a variety of academic and personal projects that have strengthened my technical skills. These projects include creating web and mobile applications, solving programming challenges, and collaborating on team projects. Although I have no formal work experience, these experiences have allowed me to apply my theoretical knowledge in practical settings and develop problem-solving skills.
 
   - title: Education # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        title: Harvard University
-        caption: 2010 - 2013
-        sub_title: BSc Computer Science
+        title: University of Guadalajara
+        caption: 2020 - 2023
+        sub_title: Bachelor's degree in computer engineering
         quote: >
-          Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
+          Graduates from the University of Guadalajara (UdG) are considered excellent due to the quality of education, the experience of the professors, the available resources, and the research opportunities. Collaboration with industry and the university's reputation also contribute to the success of its graduates. However, ultimate success depends on the individual effort and skills of each graduate.
         description: | # this will include new lines to allow paragraphs
-          During my time at Harvard I learnt most of my key skills that have I have taken through my career such as teamwork and working to tight deadlines. I thouroughly enjoyed my time as university and learnt a lot about a healthy work life balance.
+          As a graduate of the University of Guadalajara (UdG) with a degree in Computer Engineering, I have acquired a wide range of skills that prepare me to excel in the field of computing. Some of my skills include:
 
-          I spent a lot of my free time as a committee member of the *Harvard Mountaineering Club* taking on roles such as *Trip Secretary* and *Vice-President*.
+          Programming: I have experience in several programming languages, such as Java, Python and C++, which allows me to develop applications and software effectively.
+
+          Algorithm Design: I can design efficient algorithms to solve computational problems optimally.
+
+          Software Development: I am trained in the complete software development cycle, from planning and design to implementation and testing.
+
+          Databases: I have knowledge in database design and data management using database management systems (DBMS).
+
+          Networking: I understand the concepts of networks and protocols, as well as being able to configure and maintain networks effectively.
+
+          Computer Security: I am aware of best practices in cybersecurity and can protect systems and data.
+
+          Web Development: I have experience developing websites and web applications using technologies such as HTML, CSS and JavaScript.
+
+          Artificial Intelligence and Machine Learning: I am familiar with machine learning techniques and can apply artificial intelligence to solve complex problems.
+
+          Cloud Computing: I have knowledge in the use of cloud services such as AWS, Azure and Google Cloud.
+
+          Project Management: I possess project management skills that allow me to carry out software development projects effectively.
+
+          Problem Solving: I approach complex problems analytically and seek creative solutions.
+
+          Technical Communication: I can communicate effectively, both orally and in writing, especially in project documentation.
+
+          Teamwork: I collaborate effectively in multidisciplinary teams and contribute constructively to joint projects.
+
+          Continuous Learning: I maintain an attitude of constant learning to stay current in a rapidly evolving field.
 
   - title: A Little More About Me
     layout: text
