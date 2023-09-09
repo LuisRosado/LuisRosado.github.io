@@ -1,5 +1,5 @@
 # Site
-repository: sproogen/resume-theme
+repository: LuisRosado/LuisRosado.github.io
 favicon: images/favicon.ico
 
 # Content configuration version
@@ -7,7 +7,7 @@ version: 2
 
 # Personal info
 name: Luis Rosado
-title: Ingenieria en computacion
+title: Computer Engineering
 email: angel.estrada0018@gmail.com
 #website: www.github.com/sproogen/resume-theme
 
@@ -22,7 +22,7 @@ github_username:  LuisRosado
 # facebook_username: jekyll
 # flickr_username: jekyll
 instagram_username: jameswgrant
-linkedin_username: Luis Angel Rosado
+linkedin_username: LuisRosado18
 # xing_username: jekyll
 # pinterest_username: jekyll
 # youtube_username: globalmtb
@@ -48,9 +48,7 @@ additional_links:
 # about_title: About Me
 about_profile_image: images/perfil.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Hi, my name's Brett and I'm a senior network system administrator. As well as administrating systems I also have experience making software and web apps. I have worked at a number of companies gaining teamwork and leadership skills.
-
-  I am most skilled in: <mark>AWS</mark> and <mark>Eating Pizza</mark>
+  I am a Computer Engineering student about to graduate. Although I have no work experience, I have developed strong technical skills throughout my career. My passion for technology and continuous learning motivate me to seek opportunities to grow and contribute in the field of computing.
 
 content:
   - title: Projects # Title for the section
