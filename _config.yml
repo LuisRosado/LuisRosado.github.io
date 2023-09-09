@@ -98,33 +98,33 @@ content:
         description: | # this will include new lines to allow paragraphs
           As a graduate of the University of Guadalajara (UdG) with a degree in Computer Engineering, I have acquired a wide range of skills that prepare me to excel in the field of computing. Some of my skills include:
 
-              <mark>Programming</mark> : I have experience in several programming languages, such as Java, Python and C++, which allows me to develop applications and software effectively.
+             <mark>Programming</mark> : I have experience in several programming languages, such as Java, Python and C++, which allows me to develop applications and software effectively.
 
-              <mark>Algorithm Design</mark> : I can design efficient algorithms to solve computational problems optimally.
+             <mark>Algorithm Design</mark> : I can design efficient algorithms to solve computational problems optimally.
 
-              <mark>Software Development</mark> : I am trained in the complete software development cycle, from planning and design to implementation and testing.
+             <mark>Software Development</mark> : I am trained in the complete software development cycle, from planning and design to implementation and testing.
 
-              <mark>Databases</mark> : I have knowledge in database design and data management using database management systems (DBMS).
+             <mark>Databases</mark> : I have knowledge in database design and data management using database management systems (DBMS).
 
-              <mark>Networking</mark> : I understand the concepts of networks and protocols, as well as being able to configure and maintain networks effectively.
+             <mark>Networking</mark> : I understand the concepts of networks and protocols, as well as being able to configure and maintain networks effectively.
 
-              <mark>Computer Security</mark> : I am aware of best practices in cybersecurity and can protect systems and data.
+             <mark>Computer Security</mark> : I am aware of best practices in cybersecurity and can protect systems and data.
 
-              <mark>Web Development</mark> : I have experience developing websites and web applications using technologies such as HTML, CSS and JavaScript.
+             <mark>Web Development</mark> : I have experience developing websites and web applications using technologies such as HTML, CSS and JavaScript.
 
-              <mark>Artificial Intelligence and Machine Learning</mark> : I am familiar with machine learning techniques and can apply artificial intelligence to solve complex problems.
+             <mark>Artificial Intelligence and Machine Learning</mark> : I am familiar with machine learning techniques and can apply artificial intelligence to solve complex problems.
 
-              <mark>Cloud Computing</mark> : I have knowledge in the use of cloud services such as AWS, Azure and Google Cloud.
+             <mark>Cloud Computing</mark> : I have knowledge in the use of cloud services such as AWS, Azure and Google Cloud.
 
-              <mark>Project Management</mark> : I possess project management skills that allow me to carry out software development projects effectively.
+             <mark>Project Management</mark> : I possess project management skills that allow me to carry out software development projects effectively.
 
              <mark>Problem Solving</mark> : I approach complex problems analytically and seek creative solutions.
 
              <mark>Technical Communication</mark> : I can communicate effectively, both orally and in writing, especially in project documentation.
 
-              <mark>Teamwork</mark> : I collaborate effectively in multidisciplinary teams and contribute constructively to joint projects.
+             <mark>Teamwork</mark> : I collaborate effectively in multidisciplinary teams and contribute constructively to joint projects.
 
-              <mark>Continuous Learning</mark> : I maintain an attitude of constant learning to stay current in a rapidly evolving field.
+             <mark>Continuous Learning</mark> : I maintain an attitude of constant learning to stay current in a rapidly evolving field.
 
   - title: A Little More About Me
     layout: text
