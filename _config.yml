@@ -9,14 +9,14 @@ version: 2
 name: Luis Rosado
 title: Ingenieria en computacion
 email: angel.estrada0018@gmail.com
-website: www.github.com/sproogen/resume-theme
+#website: www.github.com/sproogen/resume-theme
 
 # Dark Mode (true/false/never)
-darkmode: true
+darkmode: false
 
 # Social links
 twitter_username: facespics
-github_username:  sproogen
+github_username:  LuisRosado
 # stackoverflow_username: "00000001"
 # dribbble_username: jekyll
 # facebook_username: jekyll
