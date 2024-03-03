@@ -60,12 +60,12 @@ content:
     content:
       - layout: top-middle
         title: Super awesome project
-        link: github.com/sproogen
+        link: https://github.com/LuisRosado
         # link_text: Project Website
         additional_links:
-          - title:  sproogen/modern-resume-theme
+          - title:  Tienda de libros
             icon: fab fa-github
-            url: github.com/sproogen/modern-resume-theme
+            url: https://github.com/LuisRosado/TiendaDeLibros
           # - title:  Github page for project (eg. sproogen/modern-resume-theme)
           #   icon: fab fa-github
           #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
@@ -139,7 +139,19 @@ content:
 
       Algunos de mis diplomas  
       ![Docker](images/docker.jpg "Docker")
-      ![Trees](images/landscape-trees.jpg "Trees")
+      ![Kubernetes](images/Kubernetes.png "Kubernetes")
+      ![Ic](images/Introduction to cloud.png "Ic")
+      ![Cpp](images/c++ esencial.jpg "Cpp")
+      ![Dp](images/Data Privacy.png "Dp")
+      ![D101](images/Data science 101.png "D101")
+      ![Dsm](images/Data science methodology.png "Dsm")
+      ![DockerE](images/Docker Essentials A Developer Introduction.png "DockerE")
+      ![Gai](images/Generative AI Fundamentals.jpg "Gai")
+      ![Igai](images/Intro to generative ai.jpg "Igai")
+      ![Irai](images/Intro to resposible ai.jpg "Irai")
+      ![Illm](images/Introduction to large language models.jpg "Illm")
+      
+      
 
 # Footer
 footer_show_references: true
