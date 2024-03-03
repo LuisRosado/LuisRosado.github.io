@@ -74,20 +74,6 @@ content:
         description: | # this will include new lines to allow paragraphs
           I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
 
-  - title: Experience # Title for the section
-    layout: list # Type of content section (list/text)
-    content:
-      - layout: left
-        title: The Boring Company
-        link: boringcompany.com
-        # link_text: boringcompany.com
-        sub_title: Senior Network System Administrator
-        caption: November 2017 - Present
-        quote: >
-          Programming since 2010
-        description: | # this will include new lines to allow paragraphs
-            Throughout my career in Computer Engineering, I have worked on a variety of academic and personal projects that have strengthened my technical skills. These projects include creating web and mobile applications, solving programming challenges, and collaborating on team projects. Although I have no formal work experience, these experiences have allowed me to apply my theoretical knowledge in practical settings and develop problem-solving skills.
-
   - title: Education # Title for the section
     layout: list # Type of content section (list/text)
     content:
