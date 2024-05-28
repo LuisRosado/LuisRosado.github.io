@@ -44,7 +44,7 @@ additional_links:
 # gtag: "UA-00000000-0"
 # google_analytics: "UA-00000000-0"
 
-# About Section
+# About Section 
 # about_title: About Me
 about_profile_image: images/perfil.png
 about_content: | # this will include new lines to allow paragraphs
@@ -65,7 +65,7 @@ content:
           Comprehensive platform designed to provide personalized culinary recommendations using advanced algorithms and <mark>cloud services</mark>.
       - layout: top-middle
         title: Tienda de libros
-        link: https://github.com/LuisRosado/TiendaDeLibros
+        link: https://github.com/LuisRosado/TiendaDeLibros 
         quote: >
           Site archetype for an online book store
         description: | # this will include new lines to allow paragraphs
@@ -135,7 +135,7 @@ content:
       - Design and drawing (I have a technical degree in graphic design)
       - Soccer
 
-      Some courses and certifications
+      algunos de mis diplomas
 
       ![Docker](images/docker.jpg "Docker")
       ![Kubernetes](images/Kubernetes.png "Kubernetes")
@@ -161,4 +161,4 @@ sass:
   style: compressed
 
 plugins:
- - jekyll-seo-tag
+  - jekyll-seo-tag
