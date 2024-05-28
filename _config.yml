@@ -48,7 +48,10 @@ additional_links:
 # about_title: About Me
 about_profile_image: images/perfil.png
 about_content: | # this will include new lines to allow paragraphs
-  I am Luis, a passionate Computer Engineering student about to complete my academic training. During my time at university, I have developed a solid base of knowledge and skills in the world of technology. My primary focus has been programming, software development, and computer networking, areas in which I have gained deep understanding and experience. Additionally, I have a keen interest in cloud technology. Exploring the vast opportunities that cloud computing offers has been an exciting part of my educational journey. I am fascinated by the scalability, flexibility, and efficiency that cloud solutions provide, and I'm eager to delve deeper into this rapidly evolving field.
+  I am Luis, a passionate Computer Engineering student about to complete my academic training. During my time at university, I have developed a solid base of knowledge and skills in the world of technology. My primary focus has been programming, software development, and computer networking, areas in which I have gained deep understanding and experience. 
+  
+  Additionally, I have a keen interest in cloud technology. Exploring the vast opportunities that cloud computing offers has been an exciting part of my educational journey. I am fascinated by the scalability, flexibility, and efficiency that cloud solutions provide, and I'm eager to delve deeper into this rapidly evolving field.
+  
   What has fascinated me most about my education is not only the concepts and theories, but the ability to apply this knowledge in real projects. Throughout my academic journey, I have participated in challenging academic and personal projects, including those that involve cloud computing. These projects have given me the opportunity to design and develop applications, solve complex problems, and experiment with innovative technological solutions in cloud environments. I am excited for the opportunities the future has to offer after my graduation, particularly in the realm of cloud technology. I am always open to new connections and collaborations in this exciting and ever-evolving field. Thank you for taking the time to learn more about me!
 
 content:
@@ -134,7 +137,7 @@ content:
       - Design and drawing (I have a technical degree in graphic design)
       - Soccer
 
-      algunos de mis diplomas
+      Some courses I took
 
       ![Docker](images/docker.jpg "Docker")
       ![Kubernetes](images/Kubernetes.png "Kubernetes")
