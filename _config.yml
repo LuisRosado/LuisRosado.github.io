@@ -21,7 +21,7 @@ github_username:  LuisRosado
 # dribbble_username: jekyll
 # facebook_username: jekyll
 # flickr_username: jekyll
-#instagram_username: jameswgrant
+# instagram_username: jameswgrant
 linkedin_username: LuisRosado18
 # xing_username: jekyll
 # pinterest_username: jekyll
@@ -139,6 +139,7 @@ content:
       - Soccer
 
       Some courses and certifications
+
       ![Docker](images/docker.jpg "Docker")
       ![Kubernetes](images/Kubernetes.png "Kubernetes")
       ![Ic](images/Introduction to cloud.png "Ic")
