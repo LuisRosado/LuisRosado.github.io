@@ -15,7 +15,7 @@ email: angel.estrada0018@gmail.com
 darkmode: never
 
 # Social links
-twitter_username: facespics
+twitter_username: LuisRosad00
 github_username:  LuisRosado
 # stackoverflow_username: "00000001"
 # dribbble_username: jekyll
@@ -151,9 +151,6 @@ content:
       ![Igai](images/Intro to generative ai.jpg "Igai")
       ![Irai](images/Intro to resposible ai.jpg "Irai")
       ![Illm](images/Introduction to large language models.jpg "Illm")
-      
-      
-
 # Footer
 footer_show_references: true
 # references_title: References on request (Override references text)
