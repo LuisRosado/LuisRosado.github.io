@@ -59,27 +59,33 @@ content:
     layout: list # Type of content section (list/text)
     content:
       - layout: top-middle
-        title: My repositorie
-        link: https://github.com/LuisRosado
+        title: Cyberchef
+        link: https://github.com/LuisRosado/modularcyberchef
         quote: >
-          This is my github repositorie.
+          Nutritional ChatBot.
         description: | # this will include new lines to allow paragraphs
-          I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
+          Comprehensive platform designed to provide personalized culinary recommendations using advanced algorithms and <mark>cloud services</mark>.
       - layout: top-middle
         title: Tienda de libros
         link: https://github.com/LuisRosado/TiendaDeLibros
-        # link_text: Project Website
-        additional_links:
-          #- title:  Tienda de libros
-          #  icon: fab fa-github
-          #  url: https://github.com/LuisRosado/TiendaDeLibros
-          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
-          #   icon: fab fa-github
-          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
         quote: >
-          This is one of my projects.
+          Site archetype for an online book store
         description: | # this will include new lines to allow paragraphs
-          I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
+          An archetypal website for an online book store that includes a home page with promotions, a search form, login, and sections for featured books, new releases, and reviews. The design is responsive, with interactive carousels and dynamic interactions using <mark>JavaScript</mark>, and uses modern styling with CSS and Google Fonts. Ideal as a base for a complete and functional book store.
+      - layout: top-middle
+        title: SpaceTravel
+        link: https://github.com/LuisRosado/SpaceTravel
+        quote: >
+          Simple game in C
+        description: | # this will include new lines to allow paragraphs
+          The player controls a spaceship represented by a structure that stores coordinates, hearts (health), lives, and score. Asteroids are also structures that store coordinates.
+      - layout: top-middle
+        title: AI-Aspiradora
+        link: https://github.com/LuisRosado/AI-Aspiradora
+        quote: >
+          Modular simulator to evaluate the performance of a smart vacuum cleaner
+        description: | # this will include new lines to allow paragraphs
+          A reinforcement learning algorithm is used so that the vacuum cleaner learns from your actions and rewards. The model is trained on the simulator and evaluated in terms of efficiency, cleanliness and obstacle avoidance.
 
   - title: Education # Title for the section
     layout: list # Type of content section (list/text)
@@ -127,10 +133,12 @@ content:
       Alongside my interests in computing and software engineering some of my other interests and hobbies are:
       - Beach VolleyBall
       - Gaming
-      - Gastronomy (Study 2 years)
+      - Gastronomy (I studied a 2-year diploma)
+      - Design and drawing (I have a technical degree in graphic design)
       - Soccer
-
-      Algunos de mis diplomas  
+      
+  - title: Some courses and certifications
+    content: | # this will include new lines to allow paragraphs
       ![Docker](images/docker.jpg "Docker")
       ![Kubernetes](images/Kubernetes.png "Kubernetes")
       ![Ic](images/Introduction to cloud.png "Ic")
