@@ -136,9 +136,9 @@ content:
       - Gastronomy (I studied a 2-year diploma)
       - Design and drawing (I have a technical degree in graphic design)
       - Soccer
-      
-  - title: Some courses and certifications
-    content: | # this will include new lines to allow paragraphs
+
+
+      Some courses and certifications
       ![Docker](images/docker.jpg "Docker")
       ![Kubernetes](images/Kubernetes.png "Kubernetes")
       ![Ic](images/Introduction to cloud.png "Ic")
