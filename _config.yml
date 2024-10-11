@@ -16,7 +16,7 @@ darkmode: never
 
 # Social links
 twitter_username: LuisRosad00
-github_username:  LuisRosado
+github_username: LuisRosado
 # stackoverflow_username: "00000001"
 # dribbble_username: jekyll
 # facebook_username: jekyll
@@ -31,9 +31,9 @@ linkedin_username: LuisRosado18
 
 # Additional icon links
 additional_links:
-- title: Chamba
-  icon: fas fa-globe
-  url: https://www.tiktok.com/@yomelapasopensand4/video/7254740206367100166
+  - title: Chamba
+    icon: fas fa-globe
+    url: https://www.tiktok.com/@yomelapasopensand4/video/7254740206367100166
 # - title: another link
 #   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
 #   url: Link url (eg. https://google.com)
@@ -44,15 +44,15 @@ additional_links:
 # gtag: "UA-00000000-0"
 # google_analytics: "UA-00000000-0"
 
-# About Section 
+# About Section
 # about_title: About Me
 about_profile_image: images/perfil.png
 about_content: | # this will include new lines to allow paragraphs
-  I am Luis, a passionate Computer Engineering student about to complete my academic training. During my time at university, I have developed a solid base of knowledge and skills in the world of technology. My primary focus has been programming, software development, and computer networking, areas in which I have gained deep understanding and experience. 
-  
-  Additionally, I have a keen interest in cloud technology. Exploring the vast opportunities that cloud computing offers has been an exciting part of my educational journey. I am fascinated by the scalability, flexibility, and efficiency that cloud solutions provide, and I'm eager to delve deeper into this rapidly evolving field.
-  
-  What has fascinated me most about my education is not only the concepts and theories, but the ability to apply this knowledge in real projects. Throughout my academic journey, I have participated in challenging academic and personal projects, including those that involve cloud computing. These projects have given me the opportunity to design and develop applications, solve complex problems, and experiment with innovative technological solutions in cloud environments. I am excited for the opportunities the future has to offer after my graduation, particularly in the realm of cloud technology. I am always open to new connections and collaborations in this exciting and ever-evolving field. Thank you for taking the time to learn more about me!
+   Software Developer with a strong foundation in Python, C/C++, HTML, CSS, JavaScript, and SQL, along with hands-on experience in cloud platforms such as Google Cloud
+
+  and Azure. Eager to contribute to Oracle's innovative solutions while continually expanding knowledge in emerging technologies like machine learning and blockchain. 
+
+  Proven track record of problem-solving, collaboration, and delivering high-quality solutions in fast-paced environments.
 
 content:
   - title: Projects # Title for the section
@@ -67,7 +67,7 @@ content:
           Comprehensive platform designed to provide personalized culinary recommendations using advanced algorithms and <mark>cloud services</mark>.
       - layout: top-middle
         title: Tienda de libros
-        link: https://github.com/LuisRosado/TiendaDeLibros 
+        link: https://github.com/LuisRosado/TiendaDeLibros
         quote: >
           Site archetype for an online book store
         description: | # this will include new lines to allow paragraphs
