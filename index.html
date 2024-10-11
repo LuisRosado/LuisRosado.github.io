@@ -1,27 +1,185 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio de Luis Rosado</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            color: #333;
-            text-align: center;
-            padding: 2rem;
-        }
-        h1 {
-            color: #0056b3;
-        }
-        p {
-            font-size: 1.2rem;
-        }
-    </style>
+    <title>Luis Rosado - Computer Engineer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/Hacker.png" type="image/x-icon">
 </head>
 <body>
-    <h1>Hola, soy Luis Rosado</h1>
-    <p>Bienvenido a mi sitio web personal.</p>
+    <header>
+        <nav>
+            <div class="logo">My Portfolio</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="theme-toggle"><i class="fas fa-moon"></i></button>
+        </nav>
+    </header>
+
+    <main>
+        
+        <section id="home">
+            <div class="particles"></div>
+            <div class="content">
+                <h1 class="glitch" data-text="Hello, I'm Luis Rosado">Hello, I'm Luis Rosado</h1>
+                <h2 class="typewriter">Computer Engineer</h2>
+                <a href="#contact" class="cta-button">Contact Me</a>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="profile-pic-container">
+                    <img src="img/Perfil.png" alt="Luis Rosado" class="profile-pic">
+                </div>
+                <p class="bio">Software Developer with a strong foundation in Python, C/C++, HTML, CSS, JavaScript, and SQL, along with hands-on experience in cloud platforms such as Google Cloud 
+                    and Azure. Eager to contribute to Oracle's innovative solutions while continually expanding knowledge in emerging technologies like machine learning and blockchain. 
+                    Proven track record of problem-solving, collaboration, and delivering high-quality solutions in fast-paced environments.</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <div class="skill-name">HTML/CSS</div>
+                    <div class="skill-bar">
+                        <div class="skill-per" per="90%" style="max-width:90%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">JavaScript</div>
+                    <div class="skill-bar">
+                        <div class="skill-per" per="85%" style="max-width:85%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">Node.js</div>
+                    <div class="skill-bar">
+                        <div class="skill-per" per="80%" style="max-width:80%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">Python</div>
+                    <div class="skill-bar">
+                        <div class="skill-per" per="90%" style="max-width:90%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">SQL</div>
+                    <div class="skill-bar">
+                        <div class="skill-per" per="80%" style="max-width:80%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">Software Development</div>
+                    <div class="skill-bar">
+                        <div class="skill-per" per="80%" style="max-width:80%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">Algorithms and Data Structures</div>
+                    <div class="skill-bar">
+                        <div class="skill-per" per="85%" style="max-width:85%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">Networks</div>
+                    <div class="skill-bar">
+                        <div class="skill-per" per="40%" style="max-width:40%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">Artificial Intelligence</div>
+                    <div class="skill-bar">
+                        <div class="skill-per" per="50%" style="max-width:50%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">DevOps (Docker, CI/CD)</div>
+                    <div class="skill-bar">
+                        <div class="skill-per" per="40%" style="max-width:40%"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2 class="section-title">My Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/OIG.jpg" alt="Project 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>CyberChef</h3>
+                        <p>CyberChef is an innovative platform that customizes recipes for specific diets, improving users' quality of life. It uses artificial intelligence and a decentralized architecture to offer personalized recommendations, highlighting my skills in web development and cloud data management.</p>
+                        <a href="https://github.com/LuisRosado/modularcyberchef" target="_blank" class="project-link">View More</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/Traductor.png" alt="Project 2">
+                    </div>
+                    <div class="project-info">
+                        <h3>Cloud Translator</h3>
+                        <p>Website that implements automatic translations using the Azure Translator service, facilitating multilingual communication. The project combines my knowledge in web development and cloud services, highlighting my ability to integrate advanced technologies and improve accessibility.</p>
+                        <a href="https://github.com/LuisRosado/TraductorAzure" target="_blank" class="project-link">View More</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/Space.gif" alt="Project 3">
+                    </div>
+                    <div class="project-info">
+                        <h3>SpaceTravel</h3>
+                        <p>SpaceTravel is an interactive game in C that challenges players with control systems and obstacles, demonstrating programming and game development skills. This project highlights my ability to implement data structures and algorithms, offering an entertaining and educational experience.</p>
+                        <a href="https://github.com/LuisRosado/SpaceTravel" target="_blank" class="project-link">View More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>angel.estrada0018@gmail.com</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+52 3319850582</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <p><a href="https://www.linkedin.com/in/luisrosado18/" target="_blank">LinkedIn</a></p>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <p><a href="https://github.com/LuisRosado" target="_blank">GitHub</a></p>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-twitter"></i>
+                    <p><a href="https://x.com/LuisRosad00" target="_blank">Twitter</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+        <p>&copy; 2024 Luis Rosado. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
