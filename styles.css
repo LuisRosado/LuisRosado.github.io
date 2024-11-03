@@ -13,7 +13,8 @@ footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 1rem 0;
+    padding: 0.5rem 0; /* Reducido de 1rem a 0.5rem */
+    min-height: 40px; /* Altura mínima para el footer */
 }
 
 button#darkModeToggle {
@@ -35,35 +36,70 @@ button#darkModeToggle i {
 
 /* Modo oscuro */
 body.dark-mode {
-    background-color: #121212;
-    color: #e0e0e0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 
 body.dark-mode footer {
-    background-color: #1e1e1e;
+    background-color: #23272a;
 }
 
 body.dark-mode button#darkModeToggle i {
-    color: #ffeb3b; /* Color del icono de sol */
+    color: #ffffff; /* Discord light icon color */
+}
+
+body.dark-mode .navbar {
+    background-color: var(--navbar-bg);
+    color: var(--navbar-text);
+}
+
+body.dark-mode .navbar .nav-link {
+    color: var(--navbar-text);
+}
+
+body.dark-mode .navbar .navbar-brand {
+    color: var(--navbar-text);
+}
+
+body.dark-mode .bg-gradient-custom {
+    background-color: var(--primary-color);
+    background-image: none;
+}
+
+body.dark-mode .text-gradient {
+    color: var(--primary-color);
+    -webkit-text-fill-color: initial;
+    background: none;
+}
+
+body.dark-mode .skill-per {
+    background-color: var(--primary-color);
+    background-image: none;
 }
 
 /* Estilos movidos desde index.html */
 :root {
-    --primary-color: #87CEEB; /* Sky blue */
-    --secondary-color: #b1bbbd; /* White for clouds */
-    --bg-color: #ffffff; /* Light cyan for daylight */
-    --text-color: #000000; /* Black text */
-    --card-bg: #FFFFFF; /* White card background */
-    --card-text: #000000; /* Black card text */
+    --primary-color: #1e3d59; /* Azul oscuro elegante */
+    --secondary-color: #2c5282; /* Azul secundario */
+    --bg-color: #ffffff; /* Fondo blanco limpio */
+    --text-color: #2d3748; /* Texto gris oscuro */
+    --card-bg: #f8f9fa; /* Gris muy claro para tarjetas */
+    --card-text: #2d3748; /* Mismo color de texto */
+    --navbar-bg: #ffffff; /* Navbar blanco */
+    --navbar-text: #2d3748; /* Texto navbar */
+    --section-bg: #f8f9fa; /* Fondo de secciones */
 }
 
 .dark-mode {
-    --primary-color: #1E90FF; /* Dodger blue for the night sky */
-    --secondary-color: #4B0082; /* Indigo for the night */
-    --bg-color: #0d1117; /* Dark background */
-    --text-color: #c9d1d9; /* Light text */
-    --card-bg: #161b22; /* Dark card background */
-    --card-text: #c9d1d9; /* Light card text */
+    --primary-color: #5865F2; /* Discord azul principal */
+    --secondary-color: #404EED; /* Discord azul secundario */
+    --bg-color: #18191c; /* Discord fondo oscuro */
+    --text-color: #dcddde; /* Discord texto claro */
+    --card-bg: #2f3136; /* Discord fondo de tarjetas */
+    --card-text: #dcddde; /* Discord texto en tarjetas */
+    --navbar-bg: #292b2f; /* Discord navbar */
+    --navbar-text: #dcddde; /* Discord texto navbar */
+    --section-bg: #202225; /* Discord fondo de secciones alternas */
 }
 
 body {
@@ -73,14 +109,13 @@ body {
 }
 
 .bg-gradient-custom {
-    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    background-color: var(--primary-color);
 }
 
 .text-gradient {
-    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--primary-color);
+    -webkit-text-fill-color: initial;
+    background: none;
 }
 
 .skill-bar {
@@ -92,7 +127,8 @@ body {
 
 .skill-per {
     height: 100%;
-    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    background-color: var(--primary-color);
+    background-image: none;
     border-radius: 5px;
     transition: width 1.5s cubic-bezier(0.65, 0.05, 0.36, 1);
 }
@@ -159,20 +195,53 @@ body {
 
 #darkModeToggle {
     position: fixed;
-    bottom: 20px;
+    bottom: 15px; /* Ajustado de 20px a 15px */
     right: 20px;
     z-index: 1000;
     background-color: var(--primary-color);
     color: #ffffff;
     border: none;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    font-size: 24px;
+    width: 40px; /* Reducido de 50px a 40px */
+    height: 40px; /* Reducido de 50px a 40px */
+    font-size: 20px; /* Reducido de 24px a 20px */
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 #darkModeToggle:hover {
     background-color: var(--secondary-color);
+}
+
+/* Asegurarnos de que la navbar use las variables en modo claro */
+.navbar {
+    background-color: var(--navbar-bg);
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand {
+    color: var(--navbar-text);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+section:nth-child(even) {
+    background-color: var(--section-bg);
+}
+
+/* Sobrescribir la clase bg-light de Bootstrap */
+.navbar.navbar-light.bg-light {
+    background-color: var(--navbar-bg) !important;
+}
+
+body.dark-mode .navbar.navbar-light.bg-light {
+    background-color: var(--navbar-bg) !important;
 }
