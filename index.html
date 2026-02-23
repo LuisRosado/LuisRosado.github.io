@@ -3,195 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luis Rosado - Computer Engineer</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="description" content="Luis Rosado - Computer Engineer specializing in AI, Cloud Architecture, and Product Engineering. Based in Guadalajara, Mexico.">
+    <meta name="theme-color" content="#09090b">
+    <title>Luis Rosado - AI, Cloud &amp; Product Engineering</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" href="img/Hacker.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="dark-mode">
-    <!-- Navigation -->
+<body>
+    <!-- Cursor Glow -->
+    <div class="cursor-glow" aria-hidden="true"></div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Navbar -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a class="nav-logo" href="#">
+            <a class="nav-brand" href="#">
                 <img src="img/Hacker.png" alt="Logo" width="32" height="32">
                 <span>Luis Rosado</span>
             </a>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
             </button>
-            <ul class="nav-menu" id="navMenu">
-                <li><a class="nav-link" href="#home">Home</a></li>
-                <li><a class="nav-link" href="#about">About</a></li>
-                <li><a class="nav-link" href="#skills">Skills</a></li>
-                <li><a class="nav-link" href="#projects">Projects</a></li>
-                <li><a class="nav-link" href="#courses">Certificates</a></li>
-                <li><a class="nav-link" href="#contact">Contact</a></li>
-            </ul>
-            <button class="theme-toggle" id="darkModeToggle" aria-label="Toggle theme">
-                <i class="fas fa-sun"></i>
-            </button>
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a class="nav-link active" href="#home">Home</a></li>
+                    <li><a class="nav-link" href="#about">About</a></li>
+                    <li><a class="nav-link" href="#projects">Work</a></li>
+                    <li><a class="nav-link" href="#stack">Stack</a></li>
+                    <li><a class="nav-link" href="#certifications">Certs</a></li>
+                    <li><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                <button id="darkModeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
         <video id="backgroundVideo" autoplay muted loop playsinline>
-            <source src="img/Night.mp4" type="video/mp4">
+            <source src="img/Clouds.mp4" type="video/mp4">
         </video>
+        <canvas id="particleCanvas" aria-hidden="true"></canvas>
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <p class="hero-greeting">Hello, I'm</p>
-            <h1 class="hero-title">Luis Rosado</h1>
-            <h2 class="hero-subtitle">Computer Engineer</h2>
-            <p class="hero-description">I build accessible, pixel-perfect digital experiences for the web.</p>
-            <div class="hero-cta">
-                <a href="#projects" class="btn btn-primary">View My Work</a>
-                <a href="#contact" class="btn btn-outline">Get In Touch</a>
+            <div class="hero-badge" data-animate="fade-up" data-delay="0">
+                <span class="badge-dot"></span>
+                <span class="typed-text" id="typedText">AI &amp; Machine Learning</span><span class="typing-cursor" aria-hidden="true"></span>
             </div>
-            <div class="hero-social">
-                <a href="https://www.linkedin.com/in/luisrosado18/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/LuisRosado" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://x.com/LuisRosad00" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <h1 class="hero-title" data-animate="fade-up" data-delay="100">
+                <span class="hero-name">Luis Rosado</span>
+            </h1>
+            <p class="hero-subtitle" data-animate="fade-up" data-delay="200">
+                Computer Engineer building at the intersection of <strong>AI</strong>, <strong>Cloud</strong>, and <strong>Product</strong>.
+            </p>
+            <div class="hero-actions" data-animate="fade-up" data-delay="300">
+                <span class="magnetic-btn">
+                    <a href="#projects" class="btn-primary">
+                        <span>View Work</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </span>
+                <span class="magnetic-btn">
+                    <a href="https://www.linkedin.com/in/luisrosado18/" target="_blank" rel="noopener" class="btn-ghost">
+                        <i class="fab fa-linkedin-in"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                </span>
+            </div>
+            <div class="hero-socials" data-animate="fade-up" data-delay="400">
+                <a href="https://github.com/LuisRosado" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://x.com/LuisRosad00" target="_blank" rel="noopener" aria-label="Twitter / X"><i class="fab fa-x-twitter"></i></a>
+                <a href="mailto:luis.rosado0018@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
             </div>
         </div>
-        <a href="#about" class="scroll-indicator" aria-label="Scroll down">
-            <i class="fas fa-chevron-down"></i>
-        </a>
+        <div class="scroll-indicator" data-animate="fade-up" data-delay="500">
+            <span class="scroll-text">Scroll</span>
+            <div class="scroll-line"><div class="scroll-dot"></div></div>
+        </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="section">
         <div class="container">
-            <div class="section-header">
-                <span class="section-label">About</span>
-                <h2 class="section-title">Get to know me</h2>
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">01 / About</span>
+                <h2 class="section-title">About Me</h2>
             </div>
-            <div class="about-grid">
-                <div class="about-image">
-                    <div class="profile-card">
-                        <div class="profile-img-wrapper">
-                            <img src="img/Perfil-modified.png" alt="Luis Rosado">
+            <div class="about-layout">
+                <div class="about-content" data-animate="fade-up" data-delay="100">
+                    <div class="about-text">
+                        <p>Computer Engineer based in Guadalajara, Mexico. I specialize in Python, AI/ML, and cloud services, with a focus on building intelligent systems that solve real problems. My background in graphic design gives me a product-oriented perspective that bridges engineering and user experience.</p>
+                        <p>Certified by <strong>Meta</strong> (Back-End Developer), <strong>Google</strong> (Generative AI), and <strong>IBM</strong> (C++). Currently focused on combining machine learning algorithms with scalable cloud architecture to build production-grade solutions.</p>
+                    </div>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-icon"><i class="fas fa-robot"></i></div>
+                            <div>
+                                <strong>AI / ML</strong>
+                                <span>Algorithms &amp; Models</span>
+                            </div>
                         </div>
-                        <h3>Luis Rosado</h3>
-                        <p>Computer Engineer</p>
-                        <div class="profile-social">
-                            <a href="https://www.linkedin.com/in/luisrosado18/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                            <a href="https://github.com/LuisRosado" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                            <a href="https://x.com/LuisRosad00" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <div class="highlight-item">
+                            <div class="highlight-icon"><i class="fas fa-cloud"></i></div>
+                            <div>
+                                <strong>Cloud</strong>
+                                <span>Azure Services</span>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon"><i class="fas fa-layer-group"></i></div>
+                            <div>
+                                <strong>Full-Stack</strong>
+                                <span>Django &amp; Flask</span>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon"><i class="fas fa-palette"></i></div>
+                            <div>
+                                <strong>Design</strong>
+                                <span>Product Thinking</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="about-content">
-                    <p class="about-lead">I'm a developer passionate about crafting accessible, pixel-perfect user interfaces that blend thoughtful design with robust engineering.</p>
-                    <p>Hey there! I'm Luis, a tech enthusiast from <strong>Guadalajara</strong> with a passion for coding and all things digital. I love exploring different programming languages like <strong>Python</strong>, <strong>JavaScript</strong>, and <strong>C++</strong>, and turning ideas into cool web apps that can make a difference.</p>
-                    <p>I'm all about <strong>full-stack development</strong> and finding creative ways to tackle challenges. Working with others is where the magic happens. I truly believe that sharing ideas leads to the coolest solutions!</p>
-                    <p>When I'm not coding, you'll probably catch me at a local coffee shop dreaming up my next big project or catching up on the latest tech trends. My background in graphic design helps me keep my work looking fresh and functional!</p>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <span class="stat-number">6+</span>
-                            <span class="stat-label">Projects</span>
+                <div class="about-image" data-animate="fade-up" data-delay="200">
+                    <div class="profile-img-wrapper">
+                        <img src="img/Perfil-modified.png" alt="Luis Rosado">
+                        <div class="profile-ring"></div>
+                    </div>
+                    <div class="about-meta">
+                        <div class="meta-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Guadalajara, MX</span>
                         </div>
-                        <div class="stat">
-                            <span class="stat-number">9+</span>
-                            <span class="stat-label">Certificates</span>
+                        <div class="meta-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Computer Engineering</span>
                         </div>
-                        <div class="stat">
-                            <span class="stat-number">4+</span>
-                            <span class="stat-label">Languages</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="section section-alt">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-label">Skills</span>
-                <h2 class="section-title">Technologies I work with</h2>
-            </div>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Languages</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">C++</span>
-                        <span class="skill-tag">SQL</span>
-                        <span class="skill-tag">HTML</span>
-                        <span class="skill-tag">CSS</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Frameworks</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Django</span>
-                        <span class="skill-tag">Flask</span>
-                        <span class="skill-tag">Bootstrap</span>
-                        <span class="skill-tag">REST APIs</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Tools & Platforms</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">GitHub</span>
-                        <span class="skill-tag">Azure</span>
-                        <span class="skill-tag">Linux</span>
-                        <span class="skill-tag">VS Code</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Databases</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">PostgreSQL</span>
-                        <span class="skill-tag">MySQL</span>
-                        <span class="skill-tag">SQLite</span>
-                    </div>
-                </div>
-            </div>
-            <div class="skills-bars">
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span>Python</span>
-                        <span>90%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-width="90"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span>SQL</span>
-                        <span>80%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-width="80"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span>JavaScript</span>
-                        <span>70%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-width="70"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span>HTML/CSS</span>
-                        <span>70%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-width="70"></div>
                     </div>
                 </div>
             </div>
@@ -199,227 +157,260 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="section">
+    <section id="projects" class="section section-alt">
         <div class="container">
-            <div class="section-header">
-                <span class="section-label">Projects</span>
-                <h2 class="section-title">Selected Work</h2>
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">02 / Work</span>
+                <h2 class="section-title">Selected Projects</h2>
+                <p class="section-subtitle">Engineered solutions across AI, cloud, and full-stack development.</p>
             </div>
+
+            <!-- Featured Project -->
+            <article class="project-featured" data-animate="fade-up" data-delay="100">
+                <div class="project-featured-img">
+                    <img src="img/OIG.jpg" alt="CyberChef - AI-powered recipe customization platform" loading="lazy">
+                    <div class="project-overlay">
+                        <a href="https://github.com/LuisRosado/modularcyberchef" target="_blank" rel="noopener" class="project-overlay-btn">
+                            <i class="fab fa-github"></i>
+                            <span>View on GitHub</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-featured-info">
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">AI</span>
+                        <span class="tag">Featured</span>
+                    </div>
+                    <h3 class="project-featured-title">CyberChef</h3>
+                    <p class="project-featured-desc">An AI-powered platform that generates and customizes recipes based on specific dietary requirements, improving users' quality of life through intelligent food recommendations.</p>
+                    <a href="https://github.com/LuisRosado/modularcyberchef" target="_blank" rel="noopener" class="project-link">
+                        View Project <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Project Grid -->
             <div class="projects-grid">
-                <article class="project-card">
-                    <div class="project-image">
-                        <img src="img/OIG.jpg" alt="CyberChef">
+                <article class="project-card" data-animate="fade-up" data-delay="0">
+                    <div class="project-img">
+                        <img src="img/recommendation.png" alt="Book recommendation system powered by ML" loading="lazy">
                         <div class="project-overlay">
-                            <a href="https://github.com/LuisRosado/modularcyberchef" target="_blank" class="project-link">
+                            <a href="https://github.com/LuisRosado/Book_Recommendations" target="_blank" rel="noopener" class="project-overlay-btn">
                                 <i class="fab fa-github"></i>
+                                <span>View on GitHub</span>
                             </a>
                         </div>
                     </div>
-                    <div class="project-content">
-                        <h3>CyberChef</h3>
-                        <p>An innovative platform that customizes recipes for specific diets, improving users' quality of life.</p>
+                    <div class="project-info">
                         <div class="project-tags">
-                            <span>Python</span>
-                            <span>AI</span>
-                            <span>Web</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">ML</span>
+                            <span class="tag">scikit-learn</span>
                         </div>
+                        <h5 class="project-title">Book Recommendations</h5>
+                        <p class="project-desc">Machine learning recommendation engine using Python, Flask, and scikit-learn with a web interface for personalized suggestions.</p>
+                        <a href="https://github.com/LuisRosado/Book_Recommendations" target="_blank" rel="noopener" class="project-link">
+                            View Project <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
                 </article>
-                <article class="project-card">
-                    <div class="project-image">
-                        <img src="img/Traductor.png" alt="Cloud Translator">
+                <article class="project-card" data-animate="fade-up" data-delay="80">
+                    <div class="project-img">
+                        <img src="img/Maze-Solving.gif" alt="Maze solving visualization using Dijkstra's algorithm" loading="lazy">
                         <div class="project-overlay">
-                            <a href="https://github.com/LuisRosado/TraductorAzure" target="_blank" class="project-link">
+                            <a href="https://github.com/LuisRosado/Dijkstra" target="_blank" rel="noopener" class="project-overlay-btn">
                                 <i class="fab fa-github"></i>
+                                <span>View on GitHub</span>
                             </a>
                         </div>
                     </div>
-                    <div class="project-content">
-                        <h3>Cloud Translator</h3>
-                        <p>Website that implements automatic translations using the Azure Translator service.</p>
+                    <div class="project-info">
                         <div class="project-tags">
-                            <span>Azure</span>
-                            <span>API</span>
-                            <span>JavaScript</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">AI</span>
+                            <span class="tag">Pygame</span>
                         </div>
+                        <h5 class="project-title">Maze-Solving AI</h5>
+                        <p class="project-desc">Pathfinding AI that solves mazes using Dijkstra's algorithm, built with Python and visualized in real-time with Pygame.</p>
+                        <a href="https://github.com/LuisRosado/Dijkstra" target="_blank" rel="noopener" class="project-link">
+                            View Project <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
                 </article>
-                <article class="project-card">
-                    <div class="project-image">
-                        <img src="img/Space.gif" alt="SpaceTravel">
+                <article class="project-card" data-animate="fade-up" data-delay="160">
+                    <div class="project-img">
+                        <img src="img/Traductor.png" alt="Cloud-powered translation service using Azure" loading="lazy">
                         <div class="project-overlay">
-                            <a href="https://github.com/LuisRosado/SpaceTravel" target="_blank" class="project-link">
+                            <a href="https://github.com/LuisRosado/TraductorAzure" target="_blank" rel="noopener" class="project-overlay-btn">
                                 <i class="fab fa-github"></i>
+                                <span>View on GitHub</span>
                             </a>
                         </div>
                     </div>
-                    <div class="project-content">
-                        <h3>SpaceTravel</h3>
-                        <p>An interactive game in C that challenges players with control systems and obstacles.</p>
+                    <div class="project-info">
                         <div class="project-tags">
-                            <span>C</span>
-                            <span>Game</span>
-                            <span>Graphics</span>
+                            <span class="tag">Azure</span>
+                            <span class="tag">API</span>
+                            <span class="tag">Cloud</span>
                         </div>
+                        <h5 class="project-title">Cloud Translator</h5>
+                        <p class="project-desc">Multilingual translation service powered by Azure Translator API, enabling real-time language processing through cloud infrastructure.</p>
+                        <a href="https://github.com/LuisRosado/TraductorAzure" target="_blank" rel="noopener" class="project-link">
+                            View Project <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
                 </article>
-                <article class="project-card">
-                    <div class="project-image">
-                        <img src="img/recommendation.png" alt="Book Recommendations">
+                <article class="project-card" data-animate="fade-up" data-delay="0">
+                    <div class="project-img">
+                        <img src="img/Restaurant.gif" alt="Full-stack restaurant management application" loading="lazy">
                         <div class="project-overlay">
-                            <a href="https://github.com/LuisRosado/Book_Recommendations" target="_blank" class="project-link">
+                            <a href="https://github.com/LuisRosado/RestaurantDjango" target="_blank" rel="noopener" class="project-overlay-btn">
                                 <i class="fab fa-github"></i>
+                                <span>View on GitHub</span>
                             </a>
                         </div>
                     </div>
-                    <div class="project-content">
-                        <h3>Book Recommendations</h3>
-                        <p>A book recommendation system using Python, Flask, and scikit-learn with personalized suggestions.</p>
+                    <div class="project-info">
                         <div class="project-tags">
-                            <span>Python</span>
-                            <span>Flask</span>
-                            <span>ML</span>
+                            <span class="tag">Django</span>
+                            <span class="tag">Full-Stack</span>
                         </div>
+                        <h5 class="project-title">Restaurant Web App</h5>
+                        <p class="project-desc">Full-stack web application for restaurant management built with the Django framework, featuring dynamic content and database integration.</p>
+                        <a href="https://github.com/LuisRosado/RestaurantDjango" target="_blank" rel="noopener" class="project-link">
+                            View Project <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
                 </article>
-                <article class="project-card">
-                    <div class="project-image">
-                        <img src="img/Restaurant.gif" alt="Restaurant Web App">
+                <article class="project-card" data-animate="fade-up" data-delay="80">
+                    <div class="project-img">
+                        <img src="img/Space.gif" alt="SpaceTravel interactive game built in C" loading="lazy">
                         <div class="project-overlay">
-                            <a href="https://github.com/LuisRosado/RestaurantDjango" target="_blank" class="project-link">
+                            <a href="https://github.com/LuisRosado/SpaceTravel" target="_blank" rel="noopener" class="project-overlay-btn">
                                 <i class="fab fa-github"></i>
+                                <span>View on GitHub</span>
                             </a>
                         </div>
                     </div>
-                    <div class="project-content">
-                        <h3>Restaurant Web App</h3>
-                        <p>A full-featured web application for a restaurant built with the Django framework.</p>
+                    <div class="project-info">
                         <div class="project-tags">
-                            <span>Django</span>
-                            <span>Python</span>
-                            <span>Web</span>
+                            <span class="tag">C</span>
+                            <span class="tag">Game Dev</span>
                         </div>
-                    </div>
-                </article>
-                <article class="project-card">
-                    <div class="project-image">
-                        <img src="img/Maze-Solving.gif" alt="Maze-Solving">
-                        <div class="project-overlay">
-                            <a href="https://github.com/LuisRosado/Dijkstra" target="_blank" class="project-link">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Maze-Solving AI</h3>
-                        <p>An AI that solves mazes using Dijkstra's algorithm, built with Python and visualized with Pygame.</p>
-                        <div class="project-tags">
-                            <span>Python</span>
-                            <span>AI</span>
-                            <span>Pygame</span>
-                        </div>
+                        <h5 class="project-title">SpaceTravel</h5>
+                        <p class="project-desc">Interactive space game built in C with custom control systems, obstacle physics, and real-time rendering.</p>
+                        <a href="https://github.com/LuisRosado/SpaceTravel" target="_blank" rel="noopener" class="project-link">
+                            View Project <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
                 </article>
             </div>
         </div>
     </section>
 
-    <!-- Certificates Section -->
-    <section id="courses" class="section section-alt">
+    <!-- Tech Stack Section -->
+    <section id="stack" class="section">
         <div class="container">
-            <div class="section-header">
-                <span class="section-label">Education</span>
-                <h2 class="section-title">Courses & Certificates</h2>
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">03 / Stack</span>
+                <h2 class="section-title">Tech Stack</h2>
+                <p class="section-subtitle">Technologies and tools I work with.</p>
             </div>
-            <div class="certificates-grid">
-                <div class="certificate-card">
-                    <div class="certificate-icon">
-                        <i class="fab fa-meta"></i>
-                    </div>
-                    <div class="certificate-content">
-                        <span class="certificate-issuer">Meta</span>
-                        <h3>Meta Back-End Developer</h3>
-                        <p>Comprehensive program covering Python, Linux, Git, and database management.</p>
-                    </div>
-                </div>
-                <div class="certificate-card">
-                    <div class="certificate-icon">
-                        <i class="fab fa-meta"></i>
-                    </div>
-                    <div class="certificate-content">
-                        <span class="certificate-issuer">Meta</span>
-                        <h3>Django Web Framework</h3>
-                        <p>Build and deploy scalable web applications using Python and Django.</p>
+            <div class="stack-grid">
+                <div class="stack-category" data-animate="fade-up" data-delay="0">
+                    <h4 class="stack-category-title">Languages</h4>
+                    <div class="stack-pills">
+                        <span class="stack-pill"><i class="fab fa-python"></i> Python</span>
+                        <span class="stack-pill"><i class="fab fa-js-square"></i> JavaScript</span>
+                        <span class="stack-pill"><i class="fas fa-code"></i> C / C++</span>
+                        <span class="stack-pill"><i class="fas fa-database"></i> SQL</span>
                     </div>
                 </div>
-                <div class="certificate-card">
-                    <div class="certificate-icon">
-                        <i class="fab fa-meta"></i>
-                    </div>
-                    <div class="certificate-content">
-                        <span class="certificate-issuer">Meta</span>
-                        <h3>The Full Stack</h3>
-                        <p>Full-stack development with Django, HTML, CSS, and JavaScript.</p>
+                <div class="stack-category" data-animate="fade-up" data-delay="80">
+                    <h4 class="stack-category-title">Frameworks</h4>
+                    <div class="stack-pills">
+                        <span class="stack-pill"><i class="fab fa-python"></i> Django</span>
+                        <span class="stack-pill"><i class="fab fa-python"></i> Flask</span>
+                        <span class="stack-pill"><i class="fab fa-html5"></i> HTML / CSS</span>
                     </div>
                 </div>
-                <div class="certificate-card">
-                    <div class="certificate-icon">
-                        <i class="fab fa-meta"></i>
-                    </div>
-                    <div class="certificate-content">
-                        <span class="certificate-issuer">Meta</span>
-                        <h3>APIs</h3>
-                        <p>REST architecture, authentication, and building robust REST APIs.</p>
+                <div class="stack-category" data-animate="fade-up" data-delay="160">
+                    <h4 class="stack-category-title">AI / ML</h4>
+                    <div class="stack-pills">
+                        <span class="stack-pill"><i class="fas fa-brain"></i> scikit-learn</span>
+                        <span class="stack-pill"><i class="fas fa-gamepad"></i> Pygame</span>
+                        <span class="stack-pill"><i class="fas fa-project-diagram"></i> Dijkstra</span>
                     </div>
                 </div>
-                <div class="certificate-card">
-                    <div class="certificate-icon">
-                        <i class="fab fa-google"></i>
-                    </div>
-                    <div class="certificate-content">
-                        <span class="certificate-issuer">Google</span>
-                        <h3>Generative AI</h3>
-                        <p>Creating generative models for NLP and creative content generation.</p>
-                    </div>
-                </div>
-                <div class="certificate-card">
-                    <div class="certificate-icon">
-                        <i class="fas fa-building"></i>
-                    </div>
-                    <div class="certificate-content">
-                        <span class="certificate-issuer">IBM</span>
-                        <h3>C++ Essentials</h3>
-                        <p>Foundational C++ skills including syntax and OOP concepts.</p>
+                <div class="stack-category" data-animate="fade-up" data-delay="240">
+                    <h4 class="stack-category-title">Cloud &amp; Tools</h4>
+                    <div class="stack-pills">
+                        <span class="stack-pill"><i class="fab fa-microsoft"></i> Azure</span>
+                        <span class="stack-pill"><i class="fab fa-git-alt"></i> Git</span>
+                        <span class="stack-pill"><i class="fas fa-database"></i> PostgreSQL</span>
+                        <span class="stack-pill"><i class="fas fa-database"></i> MySQL</span>
+                        <span class="stack-pill"><i class="fas fa-exchange-alt"></i> REST APIs</span>
                     </div>
                 </div>
-                <div class="certificate-card">
-                    <div class="certificate-icon">
-                        <i class="fab fa-meta"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section section-alt">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">04 / Certifications</span>
+                <h2 class="section-title">Credentials</h2>
+                <p class="section-subtitle">Validated by the companies shaping the industry.</p>
+            </div>
+
+            <!-- Featured Credential -->
+            <div class="cert-featured" data-animate="fade-up" data-delay="0">
+                <div class="cert-featured-accent"></div>
+                <div class="cert-featured-content">
+                    <div class="cert-featured-header">
+                        <span class="cert-badge cert-badge--meta">Meta</span>
+                        <span class="cert-featured-label">Professional Certificate</span>
                     </div>
-                    <div class="certificate-content">
-                        <span class="certificate-issuer">Meta</span>
-                        <h3>Introduction to Databases</h3>
-                        <p>Database design, SQL, and data management for back-end development.</p>
+                    <h3 class="cert-featured-title">Meta Back-End Developer</h3>
+                    <p class="cert-featured-desc">7-course specialization covering Django, APIs, databases, Python, full-stack development, and version control.</p>
+                    <div class="cert-featured-skills">
+                        <span class="cert-skill">Django</span>
+                        <span class="cert-skill">APIs</span>
+                        <span class="cert-skill">Python</span>
+                        <span class="cert-skill">Databases</span>
+                        <span class="cert-skill">Full Stack</span>
+                        <span class="cert-skill">Version Control</span>
                     </div>
                 </div>
-                <div class="certificate-card">
-                    <div class="certificate-icon">
-                        <i class="fab fa-meta"></i>
-                    </div>
-                    <div class="certificate-content">
-                        <span class="certificate-issuer">Meta</span>
-                        <h3>Programming in Python</h3>
-                        <p>Data structures, functions, and object-oriented programming.</p>
+                <div class="cert-featured-visual">
+                    <div class="cert-visual-ring">
+                        <span class="cert-visual-number">7</span>
+                        <span class="cert-visual-label">courses</span>
                     </div>
                 </div>
-                <div class="certificate-card">
-                    <div class="certificate-icon">
-                        <i class="fab fa-git-alt"></i>
+            </div>
+
+            <!-- Other Credentials -->
+            <div class="certs-row">
+                <div class="cert-card" data-animate="fade-up" data-delay="80">
+                    <div class="cert-card-accent cert-card-accent--google"></div>
+                    <span class="cert-badge cert-badge--google">Google</span>
+                    <h4 class="cert-card-title">Generative AI</h4>
+                    <p class="cert-card-desc">Foundations of generative AI, large language models, and responsible AI practices.</p>
+                    <div class="cert-card-footer">
+                        <span class="cert-card-type"><i class="fas fa-award"></i> Certificate</span>
                     </div>
-                    <div class="certificate-content">
-                        <span class="certificate-issuer">Meta</span>
-                        <h3>Version Control</h3>
-                        <p>Git fundamentals including branching, merging, and collaboration.</p>
+                </div>
+                <div class="cert-card" data-animate="fade-up" data-delay="160">
+                    <div class="cert-card-accent cert-card-accent--ibm"></div>
+                    <span class="cert-badge cert-badge--ibm">IBM</span>
+                    <h4 class="cert-card-title">C++ Essentials</h4>
+                    <p class="cert-card-desc">Systems-level programming, memory management, and object-oriented design in C++.</p>
+                    <div class="cert-card-footer">
+                        <span class="cert-card-type"><i class="fas fa-award"></i> Certificate</span>
                     </div>
                 </div>
             </div>
@@ -429,69 +420,45 @@
     <!-- Contact Section -->
     <section id="contact" class="section contact-section">
         <div class="container">
-            <div class="section-header">
-                <span class="section-label">Contact</span>
-                <h2 class="section-title">Get In Touch</h2>
-                <p class="section-subtitle">If you would like to discuss a project or just say hi, I'm always down to chat.</p>
+            <div class="section-header section-header-light" data-animate="fade-up">
+                <span class="section-tag">05 / Contact</span>
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="section-subtitle">Open to opportunities, collaborations, and interesting conversations.</p>
             </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-details">
-                            <span class="contact-label">Email</span>
-                            <a href="mailto:luis.rosado0018@gmail.com">luis.rosado0018@gmail.com</a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="contact-details">
-                            <span class="contact-label">Phone</span>
-                            <span>+52 3319850582</span>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="contact-details">
-                            <span class="contact-label">Location</span>
-                            <span>Guadalajara, Mexico</span>
-                        </div>
-                    </div>
+            <div class="contact-grid">
+                <a href="mailto:luis.rosado0018@gmail.com" class="contact-card" data-animate="fade-up" data-delay="0">
+                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                    <span class="contact-label">Email</span>
+                    <span class="contact-value">luis.rosado0018@gmail.com</span>
+                    <i class="fas fa-arrow-up-right-from-square contact-arrow"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/luisrosado18/" target="_blank" rel="noopener" class="contact-card" data-animate="fade-up" data-delay="80">
+                    <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+                    <span class="contact-label">LinkedIn</span>
+                    <span class="contact-value">luisrosado18</span>
+                    <i class="fas fa-arrow-up-right-from-square contact-arrow"></i>
+                </a>
+                <div class="contact-card" data-animate="fade-up" data-delay="160">
+                    <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <span class="contact-label">Location</span>
+                    <span class="contact-value">Guadalajara, Mexico</span>
                 </div>
-                <div class="contact-social">
-                    <h3>Connect with me</h3>
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/luisrosado18/" target="_blank" class="social-link" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin"></i>
-                            <span>LinkedIn</span>
-                        </a>
-                        <a href="https://github.com/LuisRosado" target="_blank" class="social-link" aria-label="GitHub">
-                            <i class="fab fa-github"></i>
-                            <span>GitHub</span>
-                        </a>
-                        <a href="https://x.com/LuisRosad00" target="_blank" class="social-link" aria-label="Twitter">
-                            <i class="fab fa-twitter"></i>
-                            <span>X / Twitter</span>
-                        </a>
-                    </div>
-                </div>
+            </div>
+            <div class="contact-socials" data-animate="fade-up" data-delay="240">
+                <a href="https://www.linkedin.com/in/luisrosado18/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/LuisRosado" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://x.com/LuisRosad00" target="_blank" rel="noopener" aria-label="Twitter / X"><i class="fab fa-x-twitter"></i></a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p>Designed & Built by Luis Rosado</p>
-                <p class="footer-year">2026</p>
-            </div>
+        <div class="container footer-inner">
+            <p>Designed &amp; Built by Luis Rosado</p>
+            <a href="#home" class="back-to-top" aria-label="Back to top">
+                <i class="fas fa-arrow-up"></i>
+            </a>
         </div>
     </footer>
 
